@@ -8,9 +8,13 @@
         }
     ],
     "require": {
+        "php": ">=5.4.0",
         "slim/slim": "^3.0",
         "twig/twig": "~1.0",
         "intervention/image": "^2.3",
-        "imanee/imanee": "^1.2"
+        "imanee/imanee": "^1.2",
+        "ext-php-rrd": "*" ,
+        "ext-php-imagick" : "*" ,
+        "ext-gd" : "*"
     }
 }
