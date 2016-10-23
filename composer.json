@@ -1,0 +1,16 @@
+{
+    "name": "max/dz2",
+    "description": "Homework nm2",
+    "authors": [
+        {
+            "name": "Max Stoliarov",
+            "email": "Windmill_78@mail.ru"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",
+        "twig/twig": "~1.0",
+        "intervention/image": "^2.3",
+        "imanee/imanee": "^1.2"
+    }
+}
