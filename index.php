@@ -1,10 +1,19 @@
 <?php
 require_once 'vendor/autoload.php';
 
-$loader = new Twig_Loader_Array(array(
-    'index' => 'Hello {{ name }}!',
-));
+Twig_Autoloader::register();
+
+$loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
 
-echo $twig->render('index', array('name' => 'User'));
+
+$template = $twig->loadTemplate('index.html');
+$title = "Title of page";
+echo $template->render(array(
+'title' => $title
+
+));
+
+
+
 ?>
